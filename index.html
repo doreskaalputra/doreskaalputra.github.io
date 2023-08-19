@@ -1,146 +1,200 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NINE RENT CAR</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- My Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <title>Ruang Baca FE</title>
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">RUANG BACA FAKULTAS EKONOMI</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">Abaout</a>
-            <a class="nav-item btn btn-primary tombol" href="#">Join Us</a>
-          </div>
-        </div>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Nine<span>RentCar</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Layanan Kami</a>
+        <a href="#unit">Pilih Mobil</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
     </nav>
-    <!-- Akhir Navbar -->
+    <!-- Navbar end -->
 
-    <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-          <h1 class="display-4"><span>Online Public Access Catalogue<br>Fakultas Ekonomi-UNP</span></h1>
-          <a href="" class="btn btn-primary tombol">Our Work</a>
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Nikmati Perjalanan dengan <span>NINERENTCAR</span></h1>
+        <p>
+          Pilih armada berkualitas kami untuk perjalanan Anda yang sempurna.
+        </p>
+        <a href="#" class="cta">Booking Sekarang</a>
+      </main>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- About Section start -->
+    <section id="about" class="about">
+      <h2><span>Layanan</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/tentang-kami.jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kami menyediakan lebih dari sekadar mobil sewa</h3>
+          <p><i data-feather="check-circle"></i> Sewa mobil lepas kunci.</p>
+          <p><i data-feather="user-plus"></i> Sewa Mobil + Driver.</p>
+          <p>
+            <i data-feather="file-text"></i> Sewa Harian, Mingguan dan Bulanan.
+          </p>
+          <p><i data-feather="truck"></i> Antar jemput dalam dan Luar Kota.</p>
+          <p>
+            <i data-feather="trending-up"></i> Drop Bandara Internasionl
+            Minangkabau.
+          </p>
+          <p><i data-feather="compass"></i> Tour and Travel</p>
+          <p><i data-feather="user-check"></i> Jasa Driver</p>
         </div>
       </div>
-    <!-- Akhir Jumbotron -->
+    </section>
+    <!-- About Section end -->
 
+    <!-- Menu Section start -->
+    <section id="unit" class="unit">
+      <h2><span>Armada</span> Kami</h2>
+      <p>Pelayanan Terbaik dalam 24jam</p>
+      <p>
+        Koleksi kendaraan kami menawarkan variasi pilihan untuk setiap
+        petualangan dan kebutuhan.
+      </p>
+      <div class="row">
+        <div class="unit-card">
+          <img src="img/unit/1.jpg" alt="Brio" class="unit-card-img" />
+          <h3 class="unit-card-title">- Brio -</h3>
+          <p class="unit-card-price">Manual : IDR 300K</p>
+          <p class="unit-card-price">Matic : IDR 325K</p>
+        </div>
+        <div class="unit-card">
+          <img src="img/unit/2.jpg" alt="Jazz" class="unit-card-img" />
+          <h3 class="unit-card-title">- Jazz -</h3>
+          <p class="unit-card-price">Manual : IDR 300K</p>
+          <p class="unit-card-price">Matic : IDR 325K</p>
+        </div>
+        <div class="unit-card">
+          <img src="img/unit/3.jpg" alt="Mobilio" class="unit-card-img" />
+          <h3 class="unit-card-title">- Mobili0 -</h3>
+          <p class="unit-card-price">Manual : IDR 300K</p>
+          <p class="unit-card-price">Matic : IDR 325K</p>
+        </div>
+        <div class="unit-card">
+          <img src="img/unit/1.jpg" alt="Brio" class="unit-card-img" />
+          <h3 class="unit-card-title">- Brio -</h3>
+          <p class="unit-card-price">Manual : IDR 300K</p>
+          <p class="unit-card-price">Matic : IDR 325K</p>
+        </div>
+        <div class="unit-card">
+          <img src="img/unit/1.jpg" alt="Brio" class="unit-card-img" />
+          <h3 class="unit-card-title">- Brio -</h3>
+          <p class="unit-card-price">Manual : IDR 300K</p>
+          <p class="unit-card-price">Matic : IDR 325K</p>
+        </div>
+        <div class="unit-card">
+          <img src="img/unit/1.jpg" alt="Brio" class="unit-card-img" />
+          <h3 class="unit-card-title">- Brio -</h3>
+          <p class="unit-card-price">Manual : IDR 300K</p>
+          <p class="unit-card-price">Matic : IDR 325K</p>
+        </div>
+        <div class="unit-card">
+          <img src="img/unit/1.jpg" alt="Brio" class="unit-card-img" />
+          <h3 class="unit-card-title">- Brio -</h3>
+          <p class="unit-card-price">Manual : IDR 300K</p>
+          <p class="unit-card-price">Matic : IDR 325K</p>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section end -->
 
-    <!-- Container -->
-    <div class="container">
+    <!-- Contact Section start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>Hubungi kami untuk Booking unit perjalan anda</p>
+      <p>
+        Tersedia dalam beragam gaya dan ukuran, armada kami siap memenuhi
+        kebutuhan perjalanan Anda.
+      </p>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.1041582169852!2d100.36824726953785!3d-0.9472530590183676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b95750aefb95%3A0xaf60f47b4a8a6a4!2sNine%20Rent%20Car%20(%40rentalmobilpadangnine)!5e1!3m2!1sid!2sid!4v1692458867534!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
 
-      <!-- Info Panel -->
-      <div class="row justify-content-center">
-        <div class="col-10 info-panel">
-          <div class="row">
-            <div class="col-lg">
-              <img src="img/employee.png" alt="employee" class="float-left">
-              <h4>8 Hours</h4>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="col-lg">
-              <img src="img/hires.png" alt="hires" class="float-left">
-              <h4>High Res</h4>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-            <div class="col-lg">
-              <img src="img/security.png" alt="security" class="float-left">
-              <h4>security</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            </div>
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
           </div>
-        </div>
-      </div>
-      <!-- Akhir Info Panel -->
-
-
-      <!-- Working Space -->
-      <div class="row workingspace">
-        <div class="col-lg-5">
-          <img src="img/workingspace.png" alt="workingspace" class="img-fluid">
-        </div>
-        <div class="col-lg-5">
-          <h3>You <span>Work</span> like at <span>Home</span></h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eaque cumque at quidem! Excepturi, natus.</p>
-          <a href="" class="btn btn-info tombol">Gallery</a>
-        </div>
-      </div>
-      <!-- Akhir Working Space -->
-
-
-      <!-- Testimoni -->
-      <section class="testimoni">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h5>"Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Sint nesciunt asperiores fugiat."</h5>
-        </div>
-      </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-6 justify-content-center d-flex">
-            <figure class="figure">
-              <img src="img/img1.png" class="figure-img img-fluid rounded-circle" alt="Testi 1">
-            </figure>
-            <figure class="figure">
-              <img src="img/img2.png" class="figure-img img-fluid rounded-circle utama" alt="Testi 2">
-              <figcaption class="figure-caption">
-                <h5>Sunny Ye</h5>
-                <p>Designer</p>
-              </figcaption>
-            </figure>
-            <figure class="figure">
-              <img src="img/img3.png" class="figure-img img-fluid rounded-circle" alt="Testi 3">
-            </figure>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
           </div>
-        </div>
-      </section>
-      <!-- Akhir Testimoni -->
-
-
-      <!-- footer -->
-      <div class="row footer">
-        <div class="col text-center">
-          <p>2019 All Right Reserved By Doreska Alputra.</p>
-        </div>
+          <div class="input-group">
+            <i data-feather="phone-call"></i>
+            <input type="text" placeholder="no hp" />
+          </div>
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
       </div>
-      <!-- Akhir footer -->
+    </section>
+    <!-- Contact Section end -->
 
-    </div>
-    <!-- Akhir Container -->
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Layanan Kami</a>
+        <a href="#unit">Pilih Mobil</a>
+        <a href="#contact">Kontak</a>
+      </div>
 
+      <div class="credit">
+        <p>Created by <a href="">Doreska Alputra</a> | &copy; 2023.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
 
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
 
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
   </body>
 </html>
